@@ -38,25 +38,27 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   Create a Resource Group:
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/UFxZ0As.png" alt="RG-Networking"/>
 </p>
 <p>
 Create a Windows virtual machine.
 </p>
 <p>
-  While creating the VM, select the previously created Resource Group and allow it to create a new Virtual Network (Vnet) and Subnet. Make sure to use the password option under the <strong>Administrator Account</strong> section (not seen in image):
+  While creating the VM, select the previously created Resource Group and allow it to create a new Virtual Network (Vnet) and Subnet. Set your username and password in the Administrator Account section as well.
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/u4ypcUS.png" alt="Windows VM1"/>
+<img src="https://i.imgur.com/UfayPWK.png" alt="Username,Password"/>
 </p>
 <p>
-Create an Ubuntu virtual machine.
+Create an Ubuntu (Linux) virtual machine.
 </p>
 <p>
-  While creating the VM, select the previously created Resource Group and allow it to create a new Virtual Network (Vnet) and Subnet. Make sure to use the password option under the <strong>Administrator Account</strong> section (not seen in image):
+  Repeat the same steps above with the Resource Group, Virtual Network, username, and password for the Ubuntu Linux VM.
 </p>
 <p>
- <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <img src="https://i.imgur.com/KjlvF9c.png" alt="Linux VM2"/>
+ <img src="https://i.imgur.com/T1lddsX.png" alt="Linux Username,Password"/>
 </p>
 <p>
 Observe Your Virtual Network within Network Watcher:
