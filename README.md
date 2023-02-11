@@ -123,7 +123,7 @@ Retrieve the private IP address of the Ubuntu VM and attempt to ping it from wit
 </p>
   Exit the SSH connection by typing ‘exit’ and pressing [return]:
 </p>
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/MVsNcNV.png" alt="SSH Into Linux"/>
 <p>
 <br />
 <br />
@@ -137,7 +137,7 @@ Retrieve the private IP address of the Ubuntu VM and attempt to ping it from wit
 Observe the DHCP traffic appearing in WireShark:
 </p>
 <p>
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/2u9zIsW.png" alt="ipconfig /renew"/>
 </p>
 <br />
 <br />
@@ -149,19 +149,19 @@ Observe the DHCP traffic appearing in WireShark:
   Back in Wireshark, filter for DNS traffic only.
 </p>
 <p>
-  From your Windows 10 VM within a command line, use nslookup to see what google.com and disney.com’s IP addresses are and observe the DNS traffic being shown in WireShark:
+  From your Windows 10 VM within a command line, use nslookup to see what google.com's IP addresses are and observe the DNS traffic being shown in WireShark:
 </p>
 <p>
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/bd9jOQh.png" alt="nslookup"/>
 </p>
 <br />
 <br />
 <h3 align="center">
-  And finally, we will observe RDP traffic to finish up this tutorial
+  Observe RDP traffic 
 </h3>
 <br />
 <p>
-  Back in Wireshark, filter for RDP traffic only (tcp.port == 3389).
+  Back in Wireshark, filter for RDP traffic only (tcp.port == 3389)
 </p>
 <p>
   Oserve the immediate non-stop spam of traffic? Why is it non-stop spamming vs only showing traffic when a command is inputted?
@@ -170,16 +170,10 @@ Observe the DHCP traffic appearing in WireShark:
   The answer is because the RDP (protocol) is constantly showing you a live stream from one computer to another, therefor traffic is always being transmitted:
 </p>
 <p>
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/8ITLfVN.png" alt="TCP Port Traffic"/>
 </p>
 <br />
 <br />
 <p>
-  I hope this tutorial helped you learn a little bit about network security protocols and observe traffic between virtual machines. And although I ran this on a my MacBook Air, this can be easily done on a PC without having to download a remote desktop app since Windows provides that with it's software.
-</p>
-<p>
-  And now that we're done, DON'T FORGET TO CLEAN UP YOUR AZURE ENVIRONMENT so that you don't incur unnecessary charges.
-</p>
-<p>
-  Close your Remote Desktop connection, delete the Resource Group(s) created at the beginning of this tutorial, and verify Resource Group deletion.
+ Now that we're done, close your Remote Desktop connection, delete the Resource Group(s) created at the beginning of this tutorial, and verify Resource Group deletion to avoid incurring unnecessary extra costs.
 </p>
