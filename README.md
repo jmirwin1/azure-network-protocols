@@ -64,12 +64,12 @@ Create an Ubuntu (Linux) virtual machine.
 Observe Your Virtual Network within Network Watcher:
 </p>
 <p>
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/H9A9kYu.png" alt="Network Topology"/>
 </p>
 <br />
 <br />
 <h3 align="center">
-  Now let's observe some ICMP traffic
+  Observe some ICMP traffic
 </h3>
 <br />
 <p>
@@ -84,7 +84,7 @@ Retrieve the private IP address of the Ubuntu VM and attempt to ping it from wit
  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Attempt to ping a public website (such as www.google.com) and observe the traffic in WireShark:
+  Attempt to ping a public website (www.google.com) and observe the traffic in WireShark:
 </p>
 <p>
   <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
